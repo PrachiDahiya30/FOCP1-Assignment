@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int a, b;
+
+    printf("Enter two integers (a and b): ");
+    scanf("%d %d", &a, &b);
+
+    
+    int result = a + (~b + 1);  // (~b + 1) gives -b
+
+    printf("Result of %d - %d = %d\n", a, b, result);
+    return 0;
+}
